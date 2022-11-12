@@ -69,10 +69,25 @@
                     <div class="input-group mb-2">
                         <div class="col-4"></div>
                         <div class="col-4">
+                            
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="marcaAuto">
-                                <label for="marcaAuto">Ingrese la marca del automovil</label>
-                              </div>
+                                <select name="marcaAuto" id="marcaAuto" class="form-select form-select-lg mb2" style="font-size: 16px ;">
+                                    <option value="0"></option>
+                                    <option value="1">Honda</option>
+                                    <option value="2">Ford</option>
+                                    <option value="3">SubaUwu</option>
+                                    <option value="4">Mitsubishi</option>
+                                    <option value="5">Suzuki</option>
+                                    <option value="6">Fiat</option>
+                                    <option value="7">LandRover</option>
+                                    <option value="8">Hyundai</option>
+                                    <option value="9">Porshe</option>
+                                    <option value="10">Toyota</option>
+                                    <option value="11">Chevrolet</option>
+                                    <option value="12">Kia</option>
+                                </select>
+                                <label for="marcaAuto">Seleccione la marca del automovil</label>
+                            </div>
                         </div>
                     </div>
 
@@ -80,7 +95,7 @@
                         <div class="col-4"></div>
                         <div class="col-4">
                             <div class="form-floating">
-                                <input type="number" class="form-control" id="numAsientos">
+                                <input type="number" class="form-control" id="numAsientos" min="1" max="8">
                                 <label for="numAsientos">Ingrese el número de asientos</label>
                               </div>
                         </div>
@@ -104,8 +119,8 @@
                         <div class="col-4"></div>
                         <div class="col-4">
                             <div class="form-floating">
-                                <input type="number" class="form-control" id="numAsientos">
-                                <label for="numAsientos">Ingrese el número de puertas</label>
+                                <input type="number" class="form-control" id="numPuertas" min="1" max="10">
+                                <label for="numPuertas">Ingrese el número de puertas</label>
                               </div>
                         </div>
                     </div>
@@ -137,7 +152,7 @@
                                         <option value="5">Cross</option>
                                         <option value="6">Supermoto</option>
                                     </select>
-                                    <label for="tipoAuto">Seleccione el tipo de motocicleta</label>
+                                    <label for="tipoMoto">Seleccione el tipo de motocicleta</label>
                                 </div>
                             </div>
                         </div>
@@ -145,10 +160,19 @@
                         <div class="input-group mb-2">
                             <div class="col-4"></div>
                             <div class="col-4">
+
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="marcaMoto">
-                                    <label for="marcaMoto">Ingrese la marca de la motocicleta</label>
-                                  </div>
+                                    <select name="marcaMoto" id="marcaMoto" class="form-select form-select-lg mb2" style="font-size: 16px ;">
+                                        <option value="0"></option>
+                                        <option value="1">Ducati</option>
+                                        <option value="2">Kawasaki</option>
+                                        <option value="3">Yamaha</option>
+                                        <option value="4">Honda</option>
+                                        <option value="5">Suzuki</option>
+                                        <option value="6">BMW</option>
+                                    </select>
+                                    <label for="marcaMoto">Seleccione la marca de motocicleta</label>
+                                </div>
                             </div>
                         </div>
     
@@ -185,20 +209,31 @@
                 </div>
             </div>
         </div>
-
+        <br>
         <div class="container content-center">
             <div class="row aling-items-center">
                 <div class="row">
                     <div class="d-grid gap-2 ">
-                    <button class="btn btn-primary btn-lg" type="button" id="btnConvertir">Convertir</button>
+                    <button class="btn btn-primary btn-lg" type="button" id="btnRegistrar">RegistrarDatos</button>
                     </div>
                 </div>
             </div>
         </div>
-
+        
+        
     
     </main>
-    <div style="padding-bottom: 10%;"></div>
+    <br>
+    <div style="padding-bottom: 10%;">
+        <div class="container" id="TablaAuto">
+            <h4 style="text-align: center;">Registros de Autos</h4>
+            <div class="container" id="containerTablaAuto"></div>
+        </div>
+        <div class="container" id="TablaMoto">
+            <h4 style="text-align: center;">Registros de Motocicletas</h4>
+            <div class="container" id="containerTablaMoto"></div>
+        </div>
+    </div>
     <footer>
         <div class="footer-content">
         <h3>Integrantes</h3>
