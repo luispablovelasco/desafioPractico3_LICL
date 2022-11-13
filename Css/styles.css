@@ -30,3 +30,73 @@ footer{
     font-size: 14px;
     color: #cacdd2;
 }
+
+
+.formulario_label {
+    display: grid;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.formulario_grupo-input {
+    position: relative;
+}
+
+.formulario_input {
+	width: 1000%;
+	background: #fff;
+	border: 2px solid gray;
+	border-radius: 2px;
+	height: 35px;
+	line-height: 45px;
+	padding: 10px;
+}
+
+.formulario_input:focus {
+	border: 2px solid #0075FF;
+	outline: none;
+	box-shadow: 4px 0px 20px rgba(163,163,163, 0.4);
+}
+
+.formulario_input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario_input-error-activo {
+    display: block;
+}
+
+.formulario_validacion-estado {
+    position: absolute;
+	right: 1050px;
+	bottom: 25px;
+    top: 10px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario_checkbox {
+    margin-right: 10px;
+}
+
+/*---- Estilos usados para validaciones ----*/
+.formulario_grupo-correcto .formulario_validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_label {
+	color: #bb2929;
+}
+
+.formulario_grupo-incorrecto .formulario_validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrecto .formulario_input {
+	border: 3px solid #bb2929;
+}
