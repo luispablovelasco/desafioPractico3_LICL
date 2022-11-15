@@ -14,5 +14,9 @@ const calculadora  = function (Valor1, Valor2, Resultado) {
     this.Resultado = parse.float(Resultado);
 
     //Metodos de la clase
-    this.sumar = new Function(Resultado = Valor1 + Valor12)
+    this.sumar = new Function(Resultado = Valor1 + Valor2)
+    this.multiplicar = new Function(Resultado = Valor1 * Valor2);
+    this.dividir = new Function(Resultado = Valor1 / Valor2);
+    this.restar = new Function(Resultado = Valor1 - Valor2);
 }
+
