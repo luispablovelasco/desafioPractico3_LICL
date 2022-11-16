@@ -160,6 +160,7 @@ function mostrarDatos(){
 
         table += "</tbody>";
         table += "</table>";
+        //containerTablaAuto.insertAdjacentHTML("beforeend", `${table}`);
         containerTablaAuto.innerHTML = table;
 
     } else if(moto == true) {
@@ -194,6 +195,7 @@ function mostrarDatos(){
 
         table += "</tbody>";
         table += "</table>";
+        //containerTablaMoto.insertAdjacentHTML("beforeend", `${table}`);
         containerTablaMoto.innerHTML = table;
     }
 
